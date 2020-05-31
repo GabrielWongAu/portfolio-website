@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <meta name="Description" content="Portfolio of Gabriel Wong, an aspiring Backend/DevOps Engineer based in Melbourne, Australia. ">
+    <title>Gabriel Wong</title>
+    </head>
+
+    <body class="terminal">
+        <div class="container">
+            <div class="terminal-nav"> 
+                <header class="terminal-logo">
+                    <a class="terminal-name" href="index.html">gabewong.dev</a>
+                    :~#
+                    <a class="terminal-name" href="index.html">home/</a>
+                    <a class="terminal-name" href="projects.html">projects/</a>
+                    <span id="loader">                        
+                    </span>
+                    
+                </header>
+               
+
+                <div class="terminal-menu">
+                    <ul>
+                        <li>
+                            <a href="blog.html" typeof="ListItem">blog/</a>
+                        </li>
+                        <li>
+                            <a href="projects.html" typeof="ListItem">projects/</a>
+                        </li>
+                        <li>
+                            <a href="resume.html" typeof="ListItem">resume/</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" typeof="ListItem">contact/</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+        
+            <div class="darkmode-div">
+                    <div class="toggle-container">
+                        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>                   
+                    </div>
+                </div>
+
+                <script>
+
+                    var checkbox = document.querySelector('input[name=theme]');
+
+                    checkbox.addEventListener('change', function() {
+                        if(this.checked) {
+                            trans()
+                            document.documentElement.setAttribute('data-theme', 'light')
+                        } else {
+                             trans()
+                            document.documentElement.setAttribute('data-theme', 'dark')
+                        }
+                    })
+
+                    let trans = () => {
+                        document.documentElement.classList.add('transition');
+                        window.setTimeout(() => {
+                            document.documentElement.classList.remove('transition')
+                        }, 1000)
+                    }
+                </script>
+
+            <div class="grid-projects" id="grid-projects-contents">
+                <h1>Projects    </h1>
+                <div class="grid-content" id="grid-content">
+                    
+
+                    <div class="grid-projects">
+                        <img src="terminalapplication.jpg" class="grid-project-images"/>
+                        <h5>Project 1 - Terminal Application </h5>
+                        <li>Description of Terminal application</li>
+                        <p><a href="">Github Repository</a></p>
+                     </div>
+                    <div class="grid-projects">
+                        <img src="tetris.jpg" class="grid-project-images"/>
+                        <h5>Project 2 - Tetris</h5>
+                        <li>Description of Tetris application</li>
+                        <p><a href="">Github Repository</a></p>
+                    </div>
+                    
+                    <div class="grid-projects">
+                        <img src="skijumping.png" class="grid-project-images"/>
+                        <h5>Project 3 - Ski Jumping</h5>
+                        <li>Description of Ski Jummping application</li>
+                        <p><a href="">Github Repository</a></p>
+                    </div>
+
+                    <div class="grid-projects">
+                        <img src="pacman.png" class="grid-project-images"/>
+                        <h5>Project 4 - Pacman</h5>
+                        <li>Description of Pacman application</li>
+                        <p><a href="">Github Repository</a></p>
+                    </div>
+
+                    <div class="grid-projects">
+                        <img src="nethack.jpg" class="grid-project-images"/>
+                        <h5>Project 5 - Nethack</h5>
+                        <li>Description of Nethack application</li>
+                        <p><a href="">Github Repository</a></p>
+                    </div>
+                    
+                    <div class="grid-projects">
+                        <img src="flappybird.gif" class="grid-project-images"/>
+                        <h5>Project 6 - Flappybird</h5>
+                        <li>Description of Flappybird application</li>
+                        <p><a href="">Github Repository</a></p>
+                    </div>
+
+                    <div class="view-more-projects">
+                         <p><a href="https://github.com/GabrielWongAu">View more Projects on GitHub</a></p>
+                    </div>
+
+
+                </div>
+            </div>
+        
+        <footer class="footer">
+            <p> Made with <3 </p>
+        </footer>
+    </div>
+    <script src="darkmode.js"></script>
+    </body>
+</html>
+</html>
