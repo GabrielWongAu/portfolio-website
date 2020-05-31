@@ -79,10 +79,8 @@ h1 {
   color: var(--color-headings);
 }
 
-h1::after {
-  content: "====================================================================================================";
-  position: relative;
-  display: var(--display-h1-decoration);
+h1::before {
+  content: "> ";
 }
 
 h5:before {
