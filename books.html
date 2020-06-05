@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,10 +19,9 @@
             <div class="terminal-nav"> 
                 <header class="terminal-logo">
                     <a class="terminal-name" href="index.html">gabewong.dev</a>:~#
-                    <a class="terminal-name" href="index.html">home/</a><a class="terminal-name" href="contact.html">contact/</a><span id="loader"></span>
+                    <a class="terminal-name" href="index.html">home/</a><a class="terminal-name" href="books.html">books/</a><span id="loader"></span>
                 </header>
                
-                
                 <div class="terminal-menu">
                     <ul>
                         <li>
@@ -40,48 +39,42 @@
                     </ul>
                 </div>
             </div>
-        
+       
             <!-- Container for Darkmode Toggle Button !-->
             <div class="darkmode-div">
                 <div class="toggle-container">
-                    <input type="checkbox" id="switch" name="theme" /><label id="darkmode" for="switch">Toggle</label>
+                    <input type="checkbox" id="switch" name="theme" /><label id="darkmode" for="switch">Toggle</label>                   
                 </div>
             </div>
 
-        <!-- Container for Grid !-->
-        <div class="grid">
-            <!-- Container for Grid Content !-->
-            <div class="grid-content">
-                <h1>Contact</h1>
+            <!-- Container for Grid !-->
+            <div class="grid">
+                <!-- Container for Grid Content !-->
+                <div class="grid-content">
+                    <h1>Reading List</h1>
 
-                <div class="contact-container">
-                    <form action="https://formspree.io/mlepjoqr" method="POST">
-                    <div class="input-container">
-                        <label for="name">Name:</label>
-                        <input id="name" type="text" name="name">
-                    </div>
+                    <h5> Current Reading </h5>
+                    <li> <a href="https://www.goodreads.com/book/show/25744928-deep-work" target="_blank"> Deep Work</a> (Cal Newport) </li>
+                    <li> <a href="https://www.goodreads.com/book/show/3735293-clean-code" target="_blank"> Clean Code</a> (Robert C. Martin) </li>
+                    <li> <a href="https://www.goodreads.com/book/show/53343.On_Writing_Well" target="_blank"> On Writing Well</a> (William Zinsser) </li>
+                    <li> <a href="https://www.goodreads.com/book/show/33369258-terraform" target="_blank"> Terraform: Up and Running</a> (Yevgeniy Brikman) </li>
                     
-                    <div class="input_container">
-                        <label for="email">Email:</label>
-                        <input id="email" type="email" name="email">
-                    </div>
+                     <h5> Want to read </h5>
+                    <li> <a href="https://www.goodreads.com/book/show/26620301-puppet-best-practices" target="_blank"> Puppet Best Practices</a> (Chris Barbour & Jo Rhett) </li>
+                    <li> <a href="https://www.goodreads.com/book/show/26759355-kubernetes" target="_blank"> Kubernetes: Up and Running</a> (Chris Barbour & Jo Rhett) </li>
+                    
 
-                    <div class="input_container">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" cols="33" rows="10" placeholder="Please enter your message here"></textarea>
-                       <input type="submit" value="Send"">
-                    </div>
-                    </form>
+                    <h5> 2019 </h5>
+                    <li> <a href="https://www.goodreads.com/book/show/17255186-the-phoenix-project" target="_blank"> The Phoenix Project</a> (Gene Kim) </li>
                 </div>
-
             </div>
-        </div>
 
-        <!-- Footer !-->
-        <footer class="footer">
-            <p>Made with <3</p>
-        </footer>
-    </div>
-    <script src="js/darkmode.js"></script>
+            <!-- Footer !-->
+            <footer class="footer">
+                <p>Made with <3</p>
+            </footer>
+        </div>
+        <script src="js/darkmode.js"></script>
     </body>
 </html>
+

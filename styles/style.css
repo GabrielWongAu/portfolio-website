@@ -2,8 +2,7 @@ body {
   font-size: 1em;
   line-height: 1.5rem;
   margin: auto;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, monospace, Courier New, serif;
   word-wrap: break-word;
   background-color: var(--bg);
   color: var(--color-text);
@@ -13,7 +12,18 @@ body {
   margin-right:20px  
 }
 
+a {
+  color: #919094;
+}
 
+.grid-content a#headers {
+  color: var(--color-text);
+}
+
+.grid-content a:hover#headers {
+   background-color: var(--color-text);
+  color:var(--bg);
+}
 
 .terminal-logo {
   width: 100%;
@@ -49,8 +59,8 @@ body {
 
 .darkmode-div .toggle-container {
     position: absolute;
-    top: 5px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
 }
 
 
@@ -65,13 +75,9 @@ a {
  text-decoration:none;
 }
 
-a .grid {
-
-}
-
 a:hover {
- background-color: #ffffff;
- color:rgb(34,33,41);
+ background-color: var(--color-text);
+ color:var(--bg);
 }
 
 h1 {
@@ -81,6 +87,7 @@ h1 {
 
 h1::before {
   content: "> ";
+  
 }
 
 h5:before {
@@ -93,7 +100,10 @@ h5 {
   font-size: 1rem;
 }
 
+p {
 
+
+}
 .terminal-menu {
   width: 100%;
   margin-top: -5px;
@@ -144,6 +154,7 @@ li {
  flex-grow:1;
  margin-top:0;
  margin-right: 10px;
+ color: #919094;
 }
 
 .terminal-menu li {
@@ -153,6 +164,7 @@ li {
  margin-right: 1em;
  margin-top: 20px;
  justify-content: space-evenly;
+ color: #919094;
 }
 
 .grid-content li::before{
@@ -162,6 +174,24 @@ li {
 .grid-image li::before{
     content: "-";
 }
+
+.grid-image li,
+.grid-image a {
+  color: #919094;
+}
+
+.other-stuff li,
+.other-stuff a {
+  color: #919094;
+}
+
+.terminal-menu#terminal-menu li::before {
+  content: "";
+}
+
+.terminal-menu#terminal-menu ul {
+  margin-right: 0px;
+  }
 
 .grid {
   display: flex;
@@ -193,7 +223,8 @@ li {
 }
 
 
-.grid-project-images {
+.grid-project-images,
+.grid-content img {
   width: 368px;
   height: 312px;
 }
@@ -208,7 +239,7 @@ textarea {
   margin: 5px 0px 5px 0;
 }
 
-@media screen and (min-width: 950px)  {
+@media screen and (min-width: 900px)  {
   .container {
     display: flex;
     flex-direction: column;
@@ -228,7 +259,7 @@ textarea {
     flex-direction: row;
     justify-content: space-between; 
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   div.terminal-menu {
@@ -281,6 +312,13 @@ textarea {
   div.contact-container{
   display: block;
   }
+
+  .darkmode-div .toggle-container {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+
 }
 
 

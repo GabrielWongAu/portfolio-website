@@ -6,23 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="img/icons8-console-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/icons8-console-16.png" sizes="16x16">
     <meta name="Description" content="Portfolio of Gabriel Wong, an aspiring Backend/DevOps Engineer based in Melbourne, Australia. ">
     <title>Gabriel Wong</title>
     </head>
 
     <body class="terminal">
+        <!--Container for Grid Layout-->
         <div class="container">
+            <!--Container for Terminal Header and Terminal Navigation-->
             <div class="terminal-nav"> 
                 <header class="terminal-logo">
-                    <a class="terminal-name" href="index.html">gabewong.dev</a>
-                    :~#
-                    <a class="terminal-name" href="index.html">home/</a>
-                    <a class="terminal-name" href="resume.html">resume/</a>
-                    <span id="loader">                        
-                    </span>
-                    
+                    <a class="terminal-name" href="index.html">gabewong.dev</a>:~#
+                    <a class="terminal-name" href="index.html">home/</a><a class="terminal-name" href="resume.html">resume/</a><span id="loader"></span> 
                 </header>
-               
 
                 <div class="terminal-menu">
                     <ul>
@@ -36,53 +34,38 @@
                             <a href="resume.html" typeof="ListItem">resume/</a>
                         </li>
                         <li>
-                            <a href="contact.html" typeof="ListItem">contact/</a>
+                            <a href="speaking.html" typeof="ListItem">speaking/</a>
                         </li>
                     </ul>
                 </div>
             </div>
        
-        
+            <!--Container for Darkmode Toggle Button-->
             <div class="darkmode-div">
-                    <div class="toggle-container">
-                        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>                   
-                    </div>
+                <div class="toggle-container">
+                    <input type="checkbox" id="switch" name="theme" /><label id="darkmode" for="switch">Toggle</label>                   
                 </div>
+            </div>
 
-                <script>
-
-                    var checkbox = document.querySelector('input[name=theme]');
-
-                    checkbox.addEventListener('change', function() {
-                        if(this.checked) {
-                            trans()
-                            document.documentElement.setAttribute('data-theme', 'light')
-                        } else {
-                             trans()
-                            document.documentElement.setAttribute('data-theme', 'dark')
-                        }
-                    })
-
-                    let trans = () => {
-                        document.documentElement.classList.add('transition');
-                        window.setTimeout(() => {
-                            document.documentElement.classList.remove('transition')
-                        }, 1000)
-                    }
-                </script>
-
+            <!--Container for Grid-->
             <div class="grid">
+                <!--Container for Grid Content-->
                 <div class="grid-content">
                     <h1>Resume</h1>
-                    <p> Current: Code, Cloud, Cybersecurity Bootcamp Student @ Coder Academy   </p>
+
+                    <p> <a href="Resume04-06-20.pdf" target="_blank"> Download PDF Resume </a></p>
                     
+                    <h5>Current: Code, Cloud, Cyber Security Bootcamp Student @ Coder Academy  </h5>
+   
                     <p> Location: Melbourne, Australia</p>
 
-                    <p>Skills: Docker, Continuous Integration / Continuous Deployment, AWS Cloudformation, Linux, </p>
-                    
-                    <p> Previous Work Experience</p>
+                    <p>Skills WIP: Python, Linux, Containers (Docker), Container Orchestration (Docker Swarm & Kubernetes), Continuous Integration / Continuous Deployment (Jenkins), Infrastructure Provisioning (Terraform, CloudFormation), Networking, Information Security </p>
                     
                     
+
+                    <h5>Previous Work Experience</h5>
+                    
+                    <p> > </p>
                     <p> > Associate Adviser - Shadforth Financial Group / IOOF; *July 2019 - current*</p>
                     
                     <li> Point of contact for client technical queries.</li>
@@ -90,20 +73,34 @@
                     <li> Assisting the Private Client Advisers with strategy development.</li>
                     
 
-
+                    <p> > </p>
                     <p> > Paraplanner - Fiducian Financial Services; *Feb 2017 - July 2019* </p>
-
+                    
                     <li> Preparing high quality comprehensive Statement of Advice documents for Fiducian’s network of Financial Planners.</li>
                     <li> Developing investment strategies and generating financial models to represent the investment strategies. Performing calculations.</li>
 
-        
-                    <p> Corporate Superannuation Consultant - Plum Super; *Jan 2016 - Feb 2017*</p>
 
+                    <p> > </p>
+                    <p> Member Services Consultant - Plum Super (NAB Wealth); *Jan. 2016 - Feb 2017*</p>
+                    
+                    <li> First point of contact for advisers and members in the Plum Contact Centre. Providing general support across PLUM's range of investment, insurance and superannuation products</li>
+                    <li> Providing empathetic customer service through respect, understanding and effective communication.</li>
+                    <li> Providing prompt escalation of issues and participate in the resolution and response back to the customer/adviser.</li>
+                    
 
+                    <p> > </p>
+                    <p> Customer Service Officer - Bank of Melbourne; *Nov. 2013 - Jan. 2015*</p>
+    
+                    <li> Providing daily banking services to customers, such as transactions, enquiries and problem solving. /li>
+                    <li> While serving, identifying potential sales opportunities through conversations and observations; referring potential leads to Customer Service Specialists and Lending Manager.</li>
+                    <li> Responsible for branch daily operations, such as security testing, ATM balancing, cash level management, ensuring posters and flyers are up to date, etc.</li>
+                    
                 </div>
             </div>
+
+            <!--Footer-->
             <footer class="footer">
-                <p> Made with <3 </p>
+                <p>Made with <3</p>
             </footer>
         </div>
         <script src="js/darkmode.js"></script>

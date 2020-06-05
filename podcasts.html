@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +13,15 @@
     </head>
 
     <body class="terminal">
-        <!-- Container for Grid Layout !-->
+        <!--Container for Grid Layout-->
         <div class="container">
-            <!-- Container for Terminal Header and Terminal Navigation-->
+            <!--Container for Terminal Header and Terminal Navigation-->
             <div class="terminal-nav"> 
                 <header class="terminal-logo">
                     <a class="terminal-name" href="index.html">gabewong.dev</a>:~#
-                    <a class="terminal-name" href="index.html">home/</a><a class="terminal-name" href="contact.html">contact/</a><span id="loader"></span>
+                    <a class="terminal-name" href="index.html">home/</a><a class="terminal-name" href="podcasts.html">podcasts/</a><span id="loader"></span>
                 </header>
                
-                
                 <div class="terminal-menu">
                     <ul>
                         <li>
@@ -40,48 +39,37 @@
                     </ul>
                 </div>
             </div>
-        
-            <!-- Container for Darkmode Toggle Button !-->
+       
+            <!--Container for Darkmode Toggle Button-->
             <div class="darkmode-div">
                 <div class="toggle-container">
-                    <input type="checkbox" id="switch" name="theme" /><label id="darkmode" for="switch">Toggle</label>
+                    <input type="checkbox" id="switch" name="theme" /><label id="darkmode" for="switch">Toggle</label>                   
                 </div>
             </div>
 
-        <!-- Container for Grid !-->
-        <div class="grid">
-            <!-- Container for Grid Content !-->
-            <div class="grid-content">
-                <h1>Contact</h1>
 
-                <div class="contact-container">
-                    <form action="https://formspree.io/mlepjoqr" method="POST">
-                    <div class="input-container">
-                        <label for="name">Name:</label>
-                        <input id="name" type="text" name="name">
-                    </div>
+            <!--Container for Grid-->
+            <div class="grid">
+                <!--Container for Grid Content-->
+                <div class="grid-content">
+                    <h1>Podcasts</h1>
+
+                    <p>Here's a list of my favourite podcasts:</p>
                     
-                    <div class="input_container">
-                        <label for="email">Email:</label>
-                        <input id="email" type="email" name="email">
-                    </div>
-
-                    <div class="input_container">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" cols="33" rows="10" placeholder="Please enter your message here"></textarea>
-                       <input type="submit" value="Send"">
-                    </div>
-                    </form>
+                    <li> <a href="https://softwareengineeringdaily.com/" target="_blank"> Software Engineering Daily</a> </li>
+                    <li> <a href="https://www.arresteddevops.com/" target="_blank"> Arrested DevOps</a> </li>
+                    <li> <a href="https://www.devopsparadox.com/" target="_blank"> DevOps Paradox</a> </li>
+                    <li> <a href="https://corecursive.com/" target="_blank"> CoRecursive</a> </li>
+                      
                 </div>
-
             </div>
-        </div>
 
-        <!-- Footer !-->
-        <footer class="footer">
-            <p>Made with <3</p>
-        </footer>
-    </div>
-    <script src="js/darkmode.js"></script>
+            <!--Footer-->
+            <footer class="footer">
+                <p>Made with <3</p>
+            </footer>
+        </div>
+        <script src="js/darkmode.js"></script>
     </body>
 </html>
+

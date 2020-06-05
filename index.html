@@ -6,23 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="img/icons8-console-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/icons8-console-16.png" sizes="16x16">
     <meta name="Description" content="Portfolio of Gabriel Wong, an aspiring Backend/DevOps Engineer based in Melbourne, Australia. ">
     <title>Gabriel Wong</title>
     </head>
 
     <body class="terminal">
+        <!--Container for Grid Layout-->
         <div class="container">
+            <!--Container for Terminal Header and Terminal Navigation-->
             <div class="terminal-nav"> 
                 <header class="terminal-logo">
-                    <a class="terminal-name" href="index.html">gabewong.dev</a>
-                    :~#
-                    <a class="terminal-name" href="index.html">home/</a>
-                    <span id="loader">                        
-                    </span>
-                    
+                    <a class="terminal-name" href="index.html">gabewong.dev</a>:~#
+                    <a class="terminal-name" href="index.html">home/</a><span id="loader"></span>
                 </header>
                
-
                 <div class="terminal-menu">
                     <ul>
                         <li>
@@ -35,46 +34,24 @@
                             <a href="resume.html" typeof="ListItem">resume/</a>
                         </li>
                         <li>
-                            <a href="contact.html" typeof="ListItem">contact/</a>
+                            <a href="speaking.html" typeof="ListItem">speaking/</a>
                         </li>
                     </ul>
                 </div>
-                </div>
-        
-                <div class="darkmode-div">
-                    <div class="toggle-container">
-            <input type="checkbox" id="switch" name="theme"/><label for="switch">Toggle</label>
+            </div>
+
+        <!--Container for Darkmode Toggle Button-->
+        <div class="darkmode-div">
+            <div class="toggle-container">
+                <input type="checkbox" id="switch" name="theme"/><label id="darkmode" for="switch">Toggle</label>
+            </div>
         </div>
 
-                <script>
-
-                    var checkbox = document.querySelector('input[name=theme]');
-                                       
-
-                    checkbox.addEventListener('change', function() {
-                        if(this.checked) {
-                            trans()
-                            document.documentElement.setAttribute('data-theme', 'light')
-                            window.localStorage.setItem('data-theme', 'light');
-                        } else {
-                            trans()
-                            document.documentElement.setAttribute('data-theme', 'dark')
-                            window.localStorage.setItem('data-theme', 'dark');
-                        }
-                    })
-
-                    let trans = () => {
-                        document.documentElement.classList.add('transition');
-                        window.setTimeout(() => {
-                            document.documentElement.classList.remove('transition')
-                        }, 1000)
-                    }
-                </script>
-
-           
+        <!--Container for Grid-->
         <div class="grid">
+            <!--Container for Home Page Profile Image, Social Media links & Contact Me link-->
             <div class="grid-image">
-                <img src="img/portfolio-image.png" alt="portfolio-image" id="portfolio-image"></img>
+                <img src="img/portfolio-image.png" alt="Main Profile Image of Gabriel Wong" id="portfolio-image" />
                 <ul>
                     <li>
                         <a href="https://github.com/GabrielWongAu" target="_blank">Github</a>
@@ -88,11 +65,15 @@
                     <li>
                         <a href="https://codepen.io/GabrielWong" target="_blank">Codepen</a>
                     </li>
+                    <li>
+                        <a href="contact.html" typeof="ListItem">Contact Me</a>
+                    </li>
                 </ul>
             </div>
             
+            <!--Container for Home Page content with blurb, skills and other stuff-->
             <div class="grid-content">
-                <h1>Gabriel Wong    </h1>
+                <h1>Gabriel Wong</h1>
                 
                 <h5> Aspiring Backend/DevOps Engineer</h5>
                 <p>Interested in all things technology, distributed systems, containers and kubernetes. </p> 
@@ -108,19 +89,24 @@
                     <li> Python</li>
                     <li> Bash</li>
 
-
-                <h5> Highlighted Projects</h5>
-                    <li> Terminal Application (Term 1 - Bootcamp) - Coming soon</li>
-                    <li> Peer-To-Peer Application (Term 2 - Bootcamp) - Coming soon</li>
-                    <li> System Design Project (Term 3 - Bootcamp) - Coming soon</li>
-                    <li> Major Web Application Project (Term 4 - Bootcamp) - Coming soon</li>                
-            </div>
-        </div>
-        
+                <h5> Other Stuff</h5>
+                    <div class="other-stuff" id="other-stuff">
+                        <li>
+                            <a href="tools.html" typeof="ListItem"> Tools I Use</a>
+                        </li>
+                        <li>
+                            <a href="books.html" typeof="ListItem"> Reading List</a>
+                        </li>
+                        <li>
+                            <a href="podcasts.html" typeof="ListItem"> Podcasts</a>
+                        </li>
+                    </div>
+                        
+        <!--Footer-->
         <footer class="footer">
-            <p> Made with <3 </p>
+            <p>Made with <3</p>
         </footer>
     </div>
-    <script src="js/darkmode.js"></script>
+    <script src="darkmode.js"></script>
     </body>
 </html>

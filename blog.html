@@ -6,27 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="img/icons8-console-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/icons8-console-16.png" sizes="16x16">
     <meta name="Description" content="Portfolio of Gabriel Wong, an aspiring Backend/DevOps Engineer based in Melbourne, Australia. ">
     <title>Gabriel Wong</title>
     </head>
 
     <body class="terminal">
+        <!--Container for Grid Layout-->
         <div class="container">
+            <!--Container for Terminal Header and Terminal Navigation-->
             <div class="terminal-nav"> 
                 <header class="terminal-logo">
-                    <a class="terminal-name" href="index.html">gabewong.dev</a>
-                    :~#
-                    <a class="terminal-name" href="index.html">home/</a>
-                    <a class="terminal-name" href="blog.html">blog/</a>
-                    <span id="loader">                        
-                    </span>
-                    
+                    <a class="terminal-name" href="index.html">gabewong.dev</a>:~#
+                    <a class="terminal-name" href="index.html">home/</a><a class="terminal-name" href="blog.html">blog/</a><span id="loader"></span>
                 </header>
                
 
                 <div class="terminal-menu">
                     <ul>
-                        <li>
+                          <li>
                             <a href="blog.html" typeof="ListItem">blog/</a>
                         </li>
                         <li>
@@ -36,62 +35,78 @@
                             <a href="resume.html" typeof="ListItem">resume/</a>
                         </li>
                         <li>
-                            <a href="contact.html" typeof="ListItem">contact/</a>
+                            <a href="speaking.html" typeof="ListItem">speaking/</a>
                         </li>
                     </ul>
                 </div>
             </div>
         
-        
-        <div class="darkmode-div">
-                    <div class="toggle-container">
-                        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>                   
-                    </div>
+            <!--Container for Darkmode Toggle Button-->
+            <div class="darkmode-div">
+                <div class="toggle-container">
+                    <input type="checkbox" id="switch" name="theme" /><label id="darkmode" for="switch">Toggle</label>                   
                 </div>
+            </div>
 
-                <script>
-
-                    var checkbox = document.querySelector('input[name=theme]');
-
-                    checkbox.addEventListener('change', function() {
-                        if(this.checked) {
-                            trans()
-                            document.documentElement.setAttribute('data-theme', 'light')
-                        } else {
-                             trans()
-                            document.documentElement.setAttribute('data-theme', 'dark')
-                        }
-                    })
-
-                    let trans = () => {
-                        document.documentElement.classList.add('transition');
-                        window.setTimeout(() => {
-                            document.documentElement.classList.remove('transition')
-                        }, 1000)
-                    }
-                </script>
-
+            <!--Container for Grid-->
             <div class="grid">
+                <!--Container for Grid Contents-->
                 <div class="grid-content">
-                <h1>Blogposts    </h1>
-                <ul>               
-                    <li><a href="#kubernetes.html">20-05-2020 Kubernetes</a></li>
+                <h1>Blogposts</h1>
+                              
+                    <li><a href="#kubernetes">20-05-2020 Kubernetes</a></li>
+                    <li><a href="#docker">20-04-2020 Docker</a></li>
+                    <li><a href="#htmlcss">20-03-2020 HTML & CSS</a> </li>
+                    <li><a href="#git">20-02-2020 Git</a></li> 
+                    <li><a href="#linuxcommand">20-01-2020 Linux Command Line Interface</a></li> 
+                
 
-                    <li><a href="#docker.html">20-05-2020 Docker</a></li>
-                    <li><a href="#htmlcss.html">20-05-2020 HTML & CSS</a> </li>
-                    <li><a href="#linuxcommands.html">20-05-2020 Linux Command Line Interface</a></li> 
-                </ul>
-
-                <h1>20-05-2020 Kubernetes</h1>
+                <h5><span id="kubernetes">20-05-2020 Kubernetes</a></h5>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum magna id tellus sodales molestie. Vestibulum tincidunt posuere feugiat. Fusce orci arcu, placerat nec viverra nec, venenatis sit amet diam. Mauris congue ligula eu enim viverra, et iaculis purus sollicitudin. Vivamus tincidunt est eu augue pellentesque consectetur. Aliquam interdum odio diam, quis vulputate neque finibus quis. Pellentesque sapien est, iaculis sit amet mauris mattis, porta faucibus ipsum. Aenean bibendum eu eros vitae convallis.</p>
 
                 <p>Phasellus molestie ullamcorper libero maximus ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae quam et arcu dignissim pretium nec a elit. Sed sit amet sem cursus, varius nunc quis, rutrum velit. Vivamus laoreet pharetra libero, nec malesuada justo ullamcorper quis. Cras metus nunc, gravida nec porttitor at, vulputate eu augue. In et sollicitudin lectus. Maecenas malesuada nisi id dui eleifend, eget hendrerit elit vehicula. Nunc ornare consectetur leo, ac consectetur sapien consectetur a. Duis vestibulum vitae mauris a viverra.</p>
+                <img src="img/kubernetesblog.jpg" alt="image of Kubernetes blog post"/>
+                <p>Phasellus vel risus nunc. Quisque non diam vel tellus maximus tempor. Etiam bibendum ullamcorper congue. Ut diam quam, consequat vel euismod non, vulputate et lacus. Pellentesque commodo rutrum tincidunt. Donec tincidunt tellus at scelerisque pellentesque. Sed ac sem molestie, lobortis augue et, tempor nulla. Praesent dignissim, erat molestie convallis sollicitudin, lectus enim rhoncus erat, nec condimentum felis nunc a magna. Etiam at massa placerat, tempus tellus a, placerat nibh. Donec id tortor ligula. Duis a dignissim urna. Aliquam vitae enim eget mi pharetra posuere id eu mi. </p>
+                
 
+
+                <h5><span id="docker">20-04-2020 Docker</a></h5>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum magna id tellus sodales molestie. Vestibulum tincidunt posuere feugiat. Fusce orci arcu, placerat nec viverra nec, venenatis sit amet diam. Mauris congue ligula eu enim viverra, et iaculis purus sollicitudin. Vivamus tincidunt est eu augue pellentesque consectetur. Aliquam interdum odio diam, quis vulputate neque finibus quis. Pellentesque sapien est, iaculis sit amet mauris mattis, porta faucibus ipsum. Aenean bibendum eu eros vitae convallis.</p>
+
+                <p>Phasellus molestie ullamcorper libero maximus ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae quam et arcu dignissim pretium nec a elit. Sed sit amet sem cursus, varius nunc quis, rutrum velit. Vivamus laoreet pharetra libero, nec malesuada justo ullamcorper quis. Cras metus nunc, gravida nec porttitor at, vulputate eu augue. In et sollicitudin lectus. Maecenas malesuada nisi id dui eleifend, eget hendrerit elit vehicula. Nunc ornare consectetur leo, ac consectetur sapien consectetur a. Duis vestibulum vitae mauris a viverra.</p>
+                <img src="img/dockerblog.png" alt="image of Docker blog post"/>
+                <p>Phasellus vel risus nunc. Quisque non diam vel tellus maximus tempor. Etiam bibendum ullamcorper congue. Ut diam quam, consequat vel euismod non, vulputate et lacus. Pellentesque commodo rutrum tincidunt. Donec tincidunt tellus at scelerisque pellentesque. Sed ac sem molestie, lobortis augue et, tempor nulla. Praesent dignissim, erat molestie convallis sollicitudin, lectus enim rhoncus erat, nec condimentum felis nunc a magna. Etiam at massa placerat, tempus tellus a, placerat nibh. Donec id tortor ligula. Duis a dignissim urna. Aliquam vitae enim eget mi pharetra posuere id eu mi. </p>
+                
+
+                <h5><span id="htmlcss">20-03-2020 HTML & CSS</a></h5>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum magna id tellus sodales molestie. Vestibulum tincidunt posuere feugiat. Fusce orci arcu, placerat nec viverra nec, venenatis sit amet diam. Mauris congue ligula eu enim viverra, et iaculis purus sollicitudin. Vivamus tincidunt est eu augue pellentesque consectetur. Aliquam interdum odio diam, quis vulputate neque finibus quis. Pellentesque sapien est, iaculis sit amet mauris mattis, porta faucibus ipsum. Aenean bibendum eu eros vitae convallis.</p>
+
+                <p>Phasellus molestie ullamcorper libero maximus ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae quam et arcu dignissim pretium nec a elit. Sed sit amet sem cursus, varius nunc quis, rutrum velit. Vivamus laoreet pharetra libero, nec malesuada justo ullamcorper quis. Cras metus nunc, gravida nec porttitor at, vulputate eu augue. In et sollicitudin lectus. Maecenas malesuada nisi id dui eleifend, eget hendrerit elit vehicula. Nunc ornare consectetur leo, ac consectetur sapien consectetur a. Duis vestibulum vitae mauris a viverra.</p>
+                <img src="img/htmlcssblog.png" alt="image of HTML & CSS blog post"/>
+                <p>Phasellus vel risus nunc. Quisque non diam vel tellus maximus tempor. Etiam bibendum ullamcorper congue. Ut diam quam, consequat vel euismod non, vulputate et lacus. Pellentesque commodo rutrum tincidunt. Donec tincidunt tellus at scelerisque pellentesque. Sed ac sem molestie, lobortis augue et, tempor nulla. Praesent dignissim, erat molestie convallis sollicitudin, lectus enim rhoncus erat, nec condimentum felis nunc a magna. Etiam at massa placerat, tempus tellus a, placerat nibh. Donec id tortor ligula. Duis a dignissim urna. Aliquam vitae enim eget mi pharetra posuere id eu mi. </p>
+                
+
+                <h5><span id="git">20-02-2020 Git</a></h5>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum magna id tellus sodales molestie. Vestibulum tincidunt posuere feugiat. Fusce orci arcu, placerat nec viverra nec, venenatis sit amet diam. Mauris congue ligula eu enim viverra, et iaculis purus sollicitudin. Vivamus tincidunt est eu augue pellentesque consectetur. Aliquam interdum odio diam, quis vulputate neque finibus quis. Pellentesque sapien est, iaculis sit amet mauris mattis, porta faucibus ipsum. Aenean bibendum eu eros vitae convallis.</p>
+
+                <p>Phasellus molestie ullamcorper libero maximus ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae quam et arcu dignissim pretium nec a elit. Sed sit amet sem cursus, varius nunc quis, rutrum velit. Vivamus laoreet pharetra libero, nec malesuada justo ullamcorper quis. Cras metus nunc, gravida nec porttitor at, vulputate eu augue. In et sollicitudin lectus. Maecenas malesuada nisi id dui eleifend, eget hendrerit elit vehicula. Nunc ornare consectetur leo, ac consectetur sapien consectetur a. Duis vestibulum vitae mauris a viverra.</p>
+                <img src="img/gitblog.png" alt="image of Git blog post"/>
+                <p>Phasellus vel risus nunc. Quisque non diam vel tellus maximus tempor. Etiam bibendum ullamcorper congue. Ut diam quam, consequat vel euismod non, vulputate et lacus. Pellentesque commodo rutrum tincidunt. Donec tincidunt tellus at scelerisque pellentesque. Sed ac sem molestie, lobortis augue et, tempor nulla. Praesent dignissim, erat molestie convallis sollicitudin, lectus enim rhoncus erat, nec condimentum felis nunc a magna. Etiam at massa placerat, tempus tellus a, placerat nibh. Donec id tortor ligula. Duis a dignissim urna. Aliquam vitae enim eget mi pharetra posuere id eu mi. </p>
+                
+
+
+                <h5><span id="linuxcommand"> 20-01-2020 Linux Command Line Interface </a></h5>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum magna id tellus sodales molestie. Vestibulum tincidunt posuere feugiat. Fusce orci arcu, placerat nec viverra nec, venenatis sit amet diam. Mauris congue ligula eu enim viverra, et iaculis purus sollicitudin. Vivamus tincidunt est eu augue pellentesque consectetur. Aliquam interdum odio diam, quis vulputate neque finibus quis. Pellentesque sapien est, iaculis sit amet mauris mattis, porta faucibus ipsum. Aenean bibendum eu eros vitae convallis.</p>
+
+                <p>Phasellus molestie ullamcorper libero maximus ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae quam et arcu dignissim pretium nec a elit. Sed sit amet sem cursus, varius nunc quis, rutrum velit. Vivamus laoreet pharetra libero, nec malesuada justo ullamcorper quis. Cras metus nunc, gravida nec porttitor at, vulputate eu augue. In et sollicitudin lectus. Maecenas malesuada nisi id dui eleifend, eget hendrerit elit vehicula. Nunc ornare consectetur leo, ac consectetur sapien consectetur a. Duis vestibulum vitae mauris a viverra.</p>
+                <img src="img/linuxcommandblog.jpg" alt="image of Linux Command Line Interface blog post"/>
                 <p>Phasellus vel risus nunc. Quisque non diam vel tellus maximus tempor. Etiam bibendum ullamcorper congue. Ut diam quam, consequat vel euismod non, vulputate et lacus. Pellentesque commodo rutrum tincidunt. Donec tincidunt tellus at scelerisque pellentesque. Sed ac sem molestie, lobortis augue et, tempor nulla. Praesent dignissim, erat molestie convallis sollicitudin, lectus enim rhoncus erat, nec condimentum felis nunc a magna. Etiam at massa placerat, tempus tellus a, placerat nibh. Donec id tortor ligula. Duis a dignissim urna. Aliquam vitae enim eget mi pharetra posuere id eu mi. </p>
                 </div>
             </div>
+
+            <!--Footer-->
             <footer class="footer">
-            <p> Made with <3 </p>
+            <p>Made with <3</p>
             </footer>
         </div>
         <script src="js/darkmode.js"></script>

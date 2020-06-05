@@ -6,21 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="img/icons8-console-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/icons8-console-16.png" sizes="16x16">
     <meta name="Description" content="Portfolio of Gabriel Wong, an aspiring Backend/DevOps Engineer based in Melbourne, Australia. ">
     <title>Gabriel Wong</title>
     </head>
 
     <body class="terminal">
+        <!--Container for Grid Layout-->
         <div class="container">
+            <!--Container for Terminal Header and Terminal Navigation-->
             <div class="terminal-nav"> 
                 <header class="terminal-logo">
-                    <a class="terminal-name" href="index.html">gabewong.dev</a>
-                    :~#
-                    <a class="terminal-name" href="index.html">home/</a>
-                    <a class="terminal-name" href="projects.html">projects/</a>
-                    <span id="loader">                        
-                    </span>
-                    
+                    <a class="terminal-name" href="index.html">gabewong.dev</a>:~#
+                    <a class="terminal-name" href="index.html">home/</a><a class="terminal-name" href="projects.html">projects/</a><span id="loader"></span>
                 </header>
                
 
@@ -36,85 +35,71 @@
                             <a href="resume.html" typeof="ListItem">resume/</a>
                         </li>
                         <li>
-                            <a href="contact.html" typeof="ListItem">contact/</a>
+                            <a href="speaking.html" typeof="ListItem">speaking/</a>
                         </li>
                     </ul>
                 </div>
             </div>
         
-        
+            <!--Container for Darkmode Toggle Button-->
             <div class="darkmode-div">
-                    <div class="toggle-container">
-                        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>                   
-                    </div>
+                <div class="toggle-container">
+                    <input type="checkbox" id="switch" name="theme" /><label id="darkmode" for="switch">Toggle</label>                   
                 </div>
+            </div>
 
-                <script>
-
-                    var checkbox = document.querySelector('input[name=theme]');
-
-                    checkbox.addEventListener('change', function() {
-                        if(this.checked) {
-                            trans()
-                            document.documentElement.setAttribute('data-theme', 'light')
-                        } else {
-                             trans()
-                            document.documentElement.setAttribute('data-theme', 'dark')
-                        }
-                    })
-
-                    let trans = () => {
-                        document.documentElement.classList.add('transition');
-                        window.setTimeout(() => {
-                            document.documentElement.classList.remove('transition')
-                        }, 1000)
-                    }
-                </script>
-
+            <!--Container for Grid-->
             <div class="grid-projects" id="grid-projects-contents">
-                <h1>Projects    </h1>
+                <h1>Projects</h1>
+                <!--Container for 6x Project Grid-->
                 <div class="grid-content" id="grid-content">
                     
-
+                    <!--Project 1 Description and Image-->
                     <div class="grid-projects">
-                        <img src="img/terminalapplication.jpg" class="grid-project-images"/>
-                        <h5>Project 1 - Terminal Application </h5>
-                        <li>Description of Terminal application</li>
-                        <p><a href="">Github Repository</a></p>
+                        <img src="img/terminalapplication.jpg" class="grid-project-images" alt="image of terminal application project"/>
+                        <h5>Terminal Project </h5>
+                        <li> Description of Terminal Project</li>
+                        <p><a href="https://github.com/GabrielWongAu">Github Repository</a></p>
                      </div>
+
+                    <!--Project 2 Description and Image-->
                     <div class="grid-projects">
-                        <img src="img/tetris.jpg" class="grid-project-images"/>
-                        <h5>Project 2 - Tetris</h5>
-                        <li>Description of Tetris application</li>
-                        <p><a href="">Github Repository</a></p>
+                        <img src="img/peertopeer.png" class="grid-project-images" alt="image of peer to peer project"/>
+                        <h5>Peer-To-Peer Project</h5>
+                        <li> Description of Peer-To-Peer Project</li>
+                        <p><a href="https://github.com/GabrielWongAu">Github Repository</a></p>
                     </div>
                     
+                    <!--Project 3 Description and Image-->
                     <div class="grid-projects">
-                        <img src="img/skijumping.png" class="grid-project-images"/>
-                        <h5>Project 3 - Ski Jumping</h5>
-                        <li>Description of Ski Jummping application</li>
+                        <img src="img/systemdesign.jpg" class="grid-project-images" alt="image of system design project"/>
+                        <h5>System Design Project</h5>
+                        <li> Description of System Design Project</li>
                         <p><a href="">Github Repository</a></p>
                     </div>
 
+                    <!--Project 4 Description and Image-->
                     <div class="grid-projects">
-                        <img src="img/pacman.png" class="grid-project-images"/>
-                        <h5>Project 4 - Pacman</h5>
-                        <li>Description of Pacman application</li>
+                        <img src="img/webapplication.jpg" class="grid-project-images" alt="image of web application project"/>
+                        <h5>Major Web Application Project</h5>
+                        <li> Description of Major Web App. Project</li>
                         <p><a href="">Github Repository</a></p>
                     </div>
 
+                    <!--Project 5 Description and Image-->
                     <div class="grid-projects">
-                        <img src="img/ethack.jpg" class="grid-project-images"/>
-                        <h5>Project 5 - Nethack</h5>
-                        <li>Description of Nethack application</li>
-                        <p><a href="">Github Repository</a></p>
+                        <img src="img/raspberrypicluster.jpg" class="grid-project-images" alt="image of raspberry pi cluster blog post"/>
+                        <h5>Raspberry Pi Cluster Project</h5>
+                        <li> Description of Raspberry Pi Cluster Project</li>
+                        <p><a href="https://github.com/GabrielWongAu">Github Repository</a></p>
                     </div>
                     
+                    <!--Project 6 Description and Image-->
                     <div class="grid-projects">
-                        <img src="img/flappybird.gif" class="grid-project-images"/>
-                        <h5>Project 6 - Flappybird</h5>
-                        <li>Description of Flappybird application</li>
-                        <p><a href="">Github Repository</a></p>
+                        <img src="img/sudokusolver.png" class="grid-project-images" alt="image of sudoku solver blog post"/>
+                        <h5>Sudoko Checker Project</h5>
+                        <li> Description of Sudoko Checker Project</li>
+                        <p><a href="https://github.com/GabrielWongAu">Github Repository</a></p>
                     </div>
 
                     <div class="view-more-projects">
@@ -125,8 +110,9 @@
                 </div>
             </div>
         
+        <!--Footer-->
         <footer class="footer">
-            <p> Made with <3 </p>
+            <p>Made with <3</p>
         </footer>
     </div>
     <script src="js/darkmode.js"></script>
